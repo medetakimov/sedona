@@ -26,6 +26,8 @@ body {
   border: 0;
 }
 
+/* Стилизация хэдера */
+
 .main-nav-list {
   display: flex; 
   justify-content: space-between;
@@ -42,16 +44,16 @@ body {
 }
 
 .media-item {
-    margin-left: 32px;
+  margin-left: 32px;
 }
 
 .map-item {
-    text-align: right;
-    margin-left: auto;
-    margin-right: 32px;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 32px;
 }
 .hotels-item {
-    text-align: right;
+  text-align: right;
 }
 
 .main-nav-item a {
@@ -316,7 +318,186 @@ section {
   background-color: #604e43;
 }
 
-/* Форма и карта */
+.button-popup:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Форма поиска отеля */
+
+.pop-up {
+  background-color: white;
+  align-self: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 568px;
+  padding: 55px 0 55px 0;
+}
+
+.pop-up-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.date-text {
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.position-button-input {
+  position: relative;
+}
+
+.form-input {
+  background-color: #f2f2f2;
+  border: 0;
+  height: 38px;
+  padding: 0 40px 0 13px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form-input:hover {
+  background-color: #ebebeb;
+}
+
+.form-input:active,
+.form-input:focus {
+  background-color: transparent;
+  border: 2px solid #e5e5e5;
+  outline: none;
+}
+
+.input-width {
+  width: 293px;
+}
+
+.button-form {
+  font-family: inherit;
+  border: 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.icon-calendar {
+  position: absolute;
+  right: 5px;
+  top: 7px;
+}
+
+.icon-svg-calendar path {
+  fill: #cacaca;
+}
+
+.icon-svg-calendar:hover path {
+  fill: #000;
+}
+
+.icon-svg-calendar:active path {
+  fill: #81b3d2;
+}
+
+.all-people {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 44px 0 42px;
+}
+
+.adults-children {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+  align-items: center;
+}
+
+.adults {
+  margin-right: 40px;
+}
+
+.children {
+  margin-right: 28px;
+}
+
+.adults,
+.children {
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.buttons-minus-plus {
+  position: relative;
+}
+
+.input-width-mini {
+  text-align: center;
+  width: 45px;
+  padding: 0 35px 0 35px;
+}
+
+.button-form {
+  color: #a9a9a9;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-form:hover {
+  color: #000;
+}
+
+.button-form:active {
+  color: #81b3d2;
+}
+
+.button-minus {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+
+.button-plus {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+
+.btn-submit-form {
+  color: #fff;
+  background-color: #81b3d2;
+  border: 0;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  margin-top: 54px;
+  border-radius: 0;
+  font-family: inherit;
+  width: 458px;
+  height: 58px;
+}
+
+.btn-submit-form:hover {
+  background-color: #669ec0;
+}
+
+.btn-submit-form:active {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+
+/* Карта */
 
 .container-map {
   width: 100%;
@@ -389,6 +570,16 @@ section {
   margin-right: 8px;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+.svg-logo path {
+  fill: #231f20;
+}
+.svg-logo:hover path {
+  fill: #81b3d2;
+}
+.svg-logo:active path {
+  fill: #bdbbbc;
 }
 
 /*CSS для Catalog*/
@@ -505,6 +696,13 @@ section {
   border-bottom: none;
 }
 
+.up-and-down {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 514px; 
+}
+
 .hotels {
   display: flex;
   flex-direction: row;
@@ -524,9 +722,8 @@ section {
   flex-direction: column;
   align-items: flex-start;
   margin-left: 30px;
-  padding-right: 500px;
+  padding-right: 550px;
   height: 92px;
-
 }
 
 .hotel-name {
@@ -576,6 +773,14 @@ section {
 
 .star-svg {
   display: flex;
+  flex-direction: row-reverse;
+  padding: 0;
+  margin: 0;
+}
+
+.rating {
+  margin-top: 50px;
+  padding: 3px;
 }
 
 /*Оформление кнопок*/
