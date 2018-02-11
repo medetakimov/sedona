@@ -113,6 +113,7 @@ body {
   align-items: center;
   text-align: center;
   padding: 60px 200px 51px 200px;
+  margin-bottom: 34px;
 }
 
 .promo-title {
@@ -163,6 +164,20 @@ section {
   display: flex;
   flex-direction: column; 
   align-items: center;
+
+  width: 33.333%;
+  margin: 0;
+  margin-top: -38px;
+
+  color: white; 
+  background-color: #81b3d2;
+}
+
+.reason-description-two {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+
   width: 33.333%;
   margin: 0;
 
@@ -182,7 +197,7 @@ section {
 }
 
 .reason-title-second {
-  width: 155px;
+  width: 151px;
   margin: 0;
   padding-top: 47px;
   font-size: 21px;
@@ -193,6 +208,14 @@ section {
 }
 
 .reason-description p {
+  margin: 0 auto;
+  font-size: 14px;
+  text-align: center;
+  line-height: 21px;
+  color: white;
+}
+
+.reason-description-two p {
   margin: 0 auto;
   font-size: 14px;
   text-align: center;
@@ -212,12 +235,13 @@ section {
 
 .blueback-desc-second {
   padding-bottom: 58px;
-  width: 285px;
+  width: 320px;
   text-transform: uppercase;
 }
 
 .reason-town {
   width: 66.666%;
+  margin-top: -38px;
 }
 
 .reason-features-list {
@@ -226,7 +250,8 @@ section {
   justify-content: space-around;
   align-items: baseline;
   width: 100%;
-  padding: 53px 0 0 0;
+  padding: 60px 0 0 0;
+  margin-bottom: 22px;
   list-style: none;
 }
 
@@ -274,7 +299,7 @@ section {
   content: '';
   position: absolute;
   top: -32px;
-  left: 20px;
+  left: 17px;
   width: 64px;
   height: 76px;
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0%29 --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='64px' height='76px' viewBox='0 0 64 76' enable-background='new 0 0 64 76' xml:space='preserve'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' fill='%2381B3D2' d='M61.097,22.501h-0.103H36.312 C50.125,15.602,51.229,11.25,50.72,8.816c-1.162-3.963-5.692-7.023-10.002-5.407c-5.569,2.089-7.137,10.388-8.644,16.387 C30.15,13.726,28.29,5.982,23.938,2.059c-1.261-1.138-3.095-2.264-5.763-2.028c-4.026,0.356-9.802,5.382-7.458,10.981 c2.251,5.378,9.687,8.777,14.578,11.489H3.153H2.879C1.295,22.501,0,23.792,0,25.37v11.322c0,1.578,1.295,2.869,2.879,2.869h0.274 v33.466v2.435V76h57.841v-0.539v-2.435V39.561h0.103c1.586,0,2.88-1.291,2.88-2.869V25.37 C63.977,23.792,62.683,22.501,61.097,22.501z M42.413,5.944c2.103-0.31,4.982,1.299,5.255,3.209c0.393,2.756-3.4,5.255-5.086,6.421 c-2.523,1.744-4.928,2.643-7.287,4.055C36.179,15.939,37.844,6.618,42.413,5.944z M19.531,15.912 c-2.225-1.485-6.544-4.431-6.44-7.771c0.112-3.595,5.743-6.57,8.814-3.886c3.856,3.371,5.713,11.105,7.119,16.557 C25.775,19.273,22.696,18.024,19.531,15.912z M25.503,73.026H6.136V39.561h19.368V73.026z M25.503,36.524H3.046V25.538h22.457 V36.524z M35.66,36.524v3.037v33.466h-7.174V39.561v-3.037V25.538h7.174V36.524z M58.011,73.026H38.644V39.561h19.367V73.026z M60.931,36.524H38.644V25.538h22.287V36.524z'/%3E%3C/svg%3E%0A");
@@ -287,7 +312,7 @@ section {
 
 .item-reason-bottom {
   width: 33.333%;
-  padding: 45px 0 0 0;
+  padding: 49px 0 0 0;
   justify-content: center;
   background-color: #eee;
 }
@@ -314,7 +339,7 @@ section {
 .reason-text {
   width: 290px;
   padding: 0 70px; 
-  margin-top: 21px;
+  margin-top: 23px;
   margin-bottom: 60px;
   font-size: 14px;
   text-align: center;
@@ -323,16 +348,42 @@ section {
   line-height: 21px;
 }
 
-/*  */
+.reason-text-two {
+  width: 290px;
+  padding: 0 70px; 
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+  line-height: 21px;
+}
+
+.reason-text-road {
+  width: 290px;
+  padding: 0 60px; 
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+  line-height: 21px;
+}
+
+/* Стилизация кнопки "Поиск" */
 
 .findhotel {
-  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  margin-top: 50px;
 }
+
+/* Форма поиска отеля */
 
 .interested {
   font-size: 30px;
@@ -343,7 +394,7 @@ section {
 }
 
 .date-of-travel {
-  width: 400px;
+  width: 436px;
   font-size: 14px;
   text-align: center;
   line-height: 24px;
@@ -376,7 +427,22 @@ section {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* Форма поиска отеля */
+.pop-up-visible {
+  visibility: visible;
+  transition: all 1s;
+  transform: translateY(0);
+}
+
+.pop-up-js-init {
+  visibility: hidden;
+  transform: translateY(-400px);
+}
+
+.pop-up-hide {
+  visibility: hidden;
+  transform: translateY(-400px);
+  transition: all 1s;
+}
 
 .pop-up {
   position: absolute;
@@ -387,7 +453,7 @@ section {
   align-self: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   width: 568px;
-  padding: 55px 0 55px 0;
+  padding: 50px 0 48px 0;
 }
 
 .form-fieldset-index {
@@ -605,6 +671,10 @@ section {
   background: url("../img/map.jpg") no-repeat;
 }
 
+.map {
+  border: none;
+}
+
 /* Футер */
 
 .footer {
@@ -639,7 +709,7 @@ section {
 
 .main-footer {
   position: relative;
-  margin-top: -120px;
+  margin-top: -126px;
   background-color: rgba(255, 255, 255, 0.9); 
 }
 
@@ -654,7 +724,7 @@ section {
 
 .social:nth-child(2) {
   margin: 0 6px 0 6px;
-  line-height: 4.5;
+  line-height: 4.3;
 }
 
 .social:hover {
@@ -716,6 +786,7 @@ section {
 
 .infrastructure {
   width: 145px;
+  min-height: 168px;
 }
 
 .typehouse {
@@ -731,7 +802,7 @@ section {
 }
 
 .form-titles {
-  padding: 12px 0 0 0;
+  padding: 12px 0 0 3px;
   font-size: 16px;
   font-weight: bold;
   line-height: 21px;
@@ -739,9 +810,17 @@ section {
   color: #fff;    
 }
 
-.inputs-list {
+.inputs-list-one {
   position: relative;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 2px 0 0px 3px;
+  margin: 0;
+}
+
+.inputs-list-two {
+  position: relative;
+  padding: 0 0 0 5px;
   margin: 0;
 }
 
@@ -763,6 +842,13 @@ section {
   padding-bottom: 7px;
 }
 
+.inputs-list-two label {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  padding-bottom: 7px;
+}
+
 .form-list-third {
   position: relative;
   padding-top: -4px;
@@ -775,7 +861,8 @@ section {
   width: 100%;
   height: 100%;
   cursor: pointer;
-  margin-top: -3px;
+  margin-top: -4px;
+  margin-bottom: -5px;
   margin-left: -1px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%23FFFFFF' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
@@ -786,18 +873,31 @@ section {
   background-repeat: no-repeat;
 }
 
+.icon-check-hotel {
+  margin-top: 10px;
+}
+
+.wifi {
+  margin-top: -3px;
+}
+
+.hotel-label {
+  margin-top: 2px;
+}
+
 /*Filter range */
 
 .filter-range {
   width: 320px;
   margin: 26px 0px 0px 304px; 
-  padding-right: 10px;
+  padding-right: 8px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .filter-range-title {
   margin-bottom: 9px;
+  margin-left: 3px;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -819,7 +919,7 @@ section {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 51%;
 
   width: 2px;
   height: 22px;
@@ -843,6 +943,10 @@ section {
   width: 90px;
   padding-left: 65px;
   margin-top: -2px;
+}
+
+.max-price {
+  margin-left: -7px;
 }
 
 .price-controls input {
@@ -894,7 +998,7 @@ section {
 }
 
 .range-toggle-min {
-  left: 0;
+  left: 2px;
 }
 
 .range-toggle-max {
@@ -908,9 +1012,10 @@ section {
   padding-bottom: 6px;  
   width: 43%;
   position: relative;
-  left: -5px;
+  left: -4px;
+  top: 2px;
 
-  font-size: 14px;
+  font-size: 13px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
@@ -955,6 +1060,8 @@ section {
 .sort-nav {
   display: flex;
   flex-direction: row;
+
+  margin: 2px 0 0 2px;
 }
 
 .sort {
@@ -1038,6 +1145,10 @@ section {
   border-bottom: 1px solid #e5e5e5;
 }
 
+.diablo {
+  margin-top: 2px;
+}
+
 .figcaption-info {
   display: flex;
   flex-direction: row;
@@ -1048,7 +1159,7 @@ section {
   flex-direction: column;
   align-items: flex-start;
   margin-left: 30px;
-  padding-right: 524px;
+  padding-right: 523px;
   height: 92px;
 }
 
@@ -1095,7 +1206,8 @@ section {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 18px;
+  margin-top: 16px;
+  margin-left: 0;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1114,9 +1226,9 @@ section {
 }
 
 .rating {
-  margin-top: 48px;
+  margin-top: 45px;
   width: 102px;
-  padding: 3px;
+  padding: 4px;
   line-height: 16px;
   background-color: #f2f2f2;
   color: #666;
@@ -1124,7 +1236,7 @@ section {
   text-align: center;
 }
 
-/*Оформление кнопок*/
+/* Оформление кнопок */
 
 .btn-more {
   padding: 6px 17px 5px 17px;
@@ -1149,6 +1261,8 @@ section {
   background-color: #604e43;
 }
 
+/*  */
+
 .stars {
   list-style: none;
   margin-left: 4px;
@@ -1160,4 +1274,33 @@ section {
 
 .star-three {
   margin-left: 6px;
+}
+
+.modal-error {
+  animation-name: bounce;
+  
+  animation-timing-function: linear;
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+    outline: 2px solid #E32636;
+  }
+  50% {
+    transform: translateY(15px);
+    outline: 2px solid #E32636;
+  }
+  70% {
+    transform: translateY(5px);
+    outline: 2px solid #E32636;
+  }
+  90% {
+    transform: translateY(-10px);
+    outline: 2px solid #E32636;
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
