@@ -26,6 +26,7 @@
     popup.classList.remove("modal-error");
     timeIn.focus();
   }
+  
   else {
     popup.classList.toggle("pop-up-visible");
     popup.classList.toggle("pop-up-hide");
