@@ -515,28 +515,6 @@ body {
 
 /* Форма поиска отеля */
 
-.pop-up-visible {
-  visibility: visible;
-  transition: all 0.6s;
-  transform: translateY(0);
-}
-
-.pop-up-js-init {
-  visibility: hidden;
-  transition: all 0.3s;
-  transform: translateY(-400px);
-}
-
-.pop-up-hide {
-  visibility: hidden;
-  transform: translateY(-400px);
-  transition: all 0.3s;
-}
-
-.modal-show {
-  display: none;
-}
-
 .pop-up {
   position: absolute;
   top: 0;
@@ -549,6 +527,47 @@ body {
   transform: translateX(-50%);
   background-color: white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes bounce {
+  0% {
+      transform: scaleY(0);
+  }
+
+  100% {
+      transform: scaleY(1);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+      transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+      transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+      transform: translateX(10px);
+  }
+}
+
+.modal-search-rollout {
+      animation: bounce 0.6s;
+      transform-origin: 0 0 0;
+}
+
+.modal-error {
+      animation: shake 0.6s;
 }
 
 .form-fieldset-index {
@@ -834,7 +853,7 @@ body {
 
 .main-footer {
   position: relative;
-  margin-top: -126px;
+  margin-top: -122px;
   
   background-color: rgba(255, 255, 255, 0.9); 
 }
@@ -946,7 +965,7 @@ body {
 }
 
 .hotels-form {
-  height: 217px;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -976,8 +995,7 @@ body {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding-left: 0;
-  padding-bottom: 6px;
+  padding: 20px 0 25px 0;
 }
 
 .infrastructure {
@@ -1061,6 +1079,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.inputs-list input[type="checkbox"]:focus + .icon-check {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 .inputs-list input[type="checkbox"]:checked + .icon-check {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%23FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
@@ -1070,7 +1094,15 @@ body {
   top: 2px;
 }
 
+.inputs-list input[type="checkbox"] + .icon-check-hotel {
+  top: 2px;
+}
+
 .inputs-list input[type="checkbox"]:checked + .icon-check-apartments {
+  top: -2px;
+}
+
+.inputs-list input[type="checkbox"] + .icon-check-apartments {
   top: -2px;
 }
 
@@ -1590,54 +1622,4 @@ body {
 
 .star-three {
   margin-left: 6px;
-}
-
-/* Анимация */
-
-.modal-error {
-  animation: shake 0.6s;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0px);
-    outline: 2px solid #E32636;
-  }
-  50% {
-    transform: translateY(15px);
-    outline: 2px solid #E32636;
-  }
-  70% {
-    transform: translateY(5px);
-    outline: 2px solid #E32636;
-  }
-  90% {
-    transform: translateY(-10px);
-    outline: 2px solid #E32636;
-  }
-  100% {
-    transform: translateY(0px);
-  }
-} 
-
-@keyframes shake {
-  0%,
-  100% {
-      transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-      transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-      transform: translateX(10px);
-  }
 }
